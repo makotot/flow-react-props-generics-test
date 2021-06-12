@@ -1,21 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// @flow strict
 
-function App() {
+import * as React from 'react';
+import './App.css';
+import { Foo } from './Foo';
+
+function App(): React.Node {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           Learn React
+          <Foo foo={1} />
         </a>
       </header>
     </div>
